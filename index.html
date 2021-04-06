@@ -10,6 +10,9 @@
 
     <title>KingZoo - Home</title>
 
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css.map">
     <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
@@ -19,14 +22,14 @@
     <!-- Barra inicial -->
     <header class="container-fluid">
         <section class="container">
-            <article class="row">
+            <article class="row d-flex justify-content-around align-items-center">
                 <!-- Logo -->
-                <a href="/" class="col-md-2"><img src="assets/imagens/logo.png" alt="Logo da empresa - KingZoo"></a>
+                <a href="/" class="col-md-2"><img class="logo" src="assets/imagens/Logo.jpg" alt="Logo da empresa - KingZoo"></a>
 
                 <!-- Buscar -->
-                <form action="#" class="col-md-7">
+                <form action="#" class="col-md-7 d-flex align-items-center">
                     <input type="text" name="name" placeholder="O que deseja hoje?">
-                    <button>
+                    <button class="d-flex align-itens-center">
        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
         viewBox="0 0 16 16">
         <path
@@ -36,26 +39,19 @@
                 </form>
 
                 <!-- Administrativo do Cliente-->
-                <ul class="col-md-3 nav">
+                <ul class="col-md-3 nav d-flex align-content-center justify-content-around">
                     <li class="nav-item">
                         <!-- Usuário -->
                         <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-         <path fill-rule="evenodd"
-          d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-        </svg> Login
+                            <img src="./assets/imagens/usuario.png">Login
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <span class="notificacao">3</span>
+                        <span class="notificacao d-flex align-content-center justify-content-center">3</span>
                         <!-- Carrinho -->
                         <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
-         <path
-          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
-        </svg> Carrinho
+                            <img src="./assets/imagens/carrinho.png"> Carrinho
                         </a>
                     </li>
                 </ul>
@@ -68,7 +64,7 @@
         <section class="container">
             <!-- Menu -->
             <ul class="nav">
-                <li class="nav-item">
+                <li class="col-md-2 nav-item d-flex align-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
        <path fill-rule="evenodd"
         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
@@ -76,24 +72,24 @@
                     <!-- SubMenu -->
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            Lançamentos
+                            <a href="#">Lançamentos</a>
                         </li>
                         <li class="nav-item">
-                            Plus Size
+                            <a href="#">Plus Size</a>
                         </li>
                         <li class="nav-item">
-                            Moda Praia
+                            <a href="#">Moda Praia</a>
                         </li>
                         <li class="nav-item">
-                            Acessórios
+                            <a href="#">Acessórios</a>
                         </li>
                         <li class="nav-item">
-                            Promoção
+                            <a href="#">Promoção</a>
                         </li>
                     </ul>
                 </li>
 
-                <li class="nav-item">
+                <li class="col-md-2 nav-item d-flex align-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
        <path fill-rule="evenodd"
         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
@@ -105,207 +101,203 @@
 
     <main>
         <!-- Banner -->
-        <section id="banner-fotograficos" class="carousel slide" data-bs-ride="carousel">
-            <article class="carousel-inner">
-                <!-- Imagens -->
-                <figure class="carousel-item active">
-                    <img src="./assets/imagens/img01.jpg" class="d-block w-100" alt="Foto lobo">
-                </figure>
-                <figure class="carousel-item">
-                    <img src="./assets/imagens/img02.jpg" class="d-block w-100" alt="Foto veado">
-                </figure>
-                <figure class="carousel-item">
-                    <img src="./assets/imagens/img03.jpg" class="d-block w-100" alt="Foto veado">
-                </figure>
-            </article>
-
-            <!-- Botões -->
-            <a class="carousel-control-prev" href="#banner-fotograficos" role="button" data-slide="prev">
+        <div id="carouselSite" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/imagens/andreea-pop-blA6Kyuv6Ss-unsplash.jpg" class="img-fluid d-block w-100" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/imagens/img02.jpg" class="img-fluid d-block w-100" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/imagens/img03.jpg" class="img-fluid d-block w-100" alt="Imagem 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselSite" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <span class="sr-only"></span>
             </a>
-            <a class="carousel-control-next" href="#banner-fotograficos" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselSite" role="button" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="sr-only">Next</span>
             </a>
-        </section>
+        </div>
 
         <!-- Banner Promocional-->
-        <section class="container">
+        <section class="container banner-statico">
             <section class="row">
                 <article class="col-md-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
-       <path
-        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
-       <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
-      </svg>
-                    <p>
-                        Parcele em até<br>
-                        <strong>5x sem juros</strong>
-                    </p>
-                </article>
-
-                <article class="col-md-6">
-                    <article class="col-md-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                    <div class="vezes-12 d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
         <path
-         d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+         d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+       </svg>
+                        <p>
+                            Parcele em até<br>
+                            <strong>5x sem juros</strong>
+                        </p>
+                    </div>
+                </article>
+                <article class="col-md-6">
+                    <div class="todo-brasil d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+        <path
+         d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
        </svg>
                         <p>
                             Entrega para<br>
                             <strong>todo Brasil</strong>
                         </p>
-                    </article>
-                    </svg>
+                    </div>
                 </article>
             </section>
         </section>
 
         <!-- Lista de Produtos -->
-        <section class="container">
+        <section class="container produtos">
             <!-- Título -->
-            <h1 class="text-center">Mais Populares</h1>
+            <h2 class="text-center">Mais Populares</h1>
 
-            <!-- linha de produtos -->
-            <article class="row">
+                <!-- linha de produtos -->
+                <article class="row">
 
-                <!-- Produto 1 -->
-                <section class="produtos col-md-3">
-                    <!-- Imagem -->
-                    <img src="./assets/imagens/" class="img-fluid" alt="peça tal">
+                    <!-- Produto 1 -->
+                    <a href="#" class="produtos-container col-md-3">
+                        <!-- Imagem -->
+                        <img src="./assets/imagens/look-1.jpg" class="img-fluid" alt="peça tal">
 
-                    <!-- Descrição -->
-                    <article class="produtos-itens">
-                        <h2>Peça Tal</h2>
+                        <!-- Descrição -->
+                        <article class="produtos-itens">
+                            <h2>Peça Tal</h2>
 
-                        <!-- Estrelas -->
-                        <div class="protudos-stars">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-         <path
-          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-        </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-         <path
-          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-        </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-         <path
-          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-        </svg>
-                        </div>
+                            <!-- Estrelas -->
+                            <div class="protudos-stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+          <path
+           d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+         </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+          <path
+           d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+         </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+          <path
+           d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+         </svg>
+                            </div>
 
-                        <!-- Preço -->
-                        <strong class="produtos-preco">
-        R$ 59,90
-       </strong>
+                            <!-- Preço -->
+                            <strong class="produtos-preco">
+         R$ 59,90
+        </strong>
 
-                    </article>
-                </section>
+                        </article>
+                    </a>
 
-                <!-- Produto 2 -->
-                <section class="produtos col-md-3">
-                    <!-- Imagem -->
-                    <img src="./assets/imagens/" class="img-fluid" alt="peça tal">
+                    <!-- Produto 2 -->
+                    <a href="#" class="produtos-container col-md-3">
+                        <!-- Imagem -->
+                        <img src="./assets/imagens/look-2.jpg" class="img-fluid" alt="peça tal">
 
-                    <!-- Descrição -->
-                    <article class="produtos-itens">
-                        <h2>Peça Tal</h2>
+                        <!-- Descrição -->
+                        <article class="produtos-itens">
+                            <h2>Peça Tal</h2>
 
-                        <!-- Estrelas -->
-                        <div class="protudos-stars">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-         <path
-          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-        </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-         <path
-          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-        </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-         <path
-          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-        </svg>
-                        </div>
+                            <!-- Estrelas -->
+                            <div class="protudos-stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+          <path
+           d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+         </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+          <path
+           d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+         </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+          <path
+           d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+         </svg>
+                            </div>
 
-                        <!-- Preço -->
-                        <strong class="produtos-preco">
-        R$ 59,90
-       </strong>
+                            <!-- Preço -->
+                            <strong class="produtos-preco">
+         R$ 59,90
+        </strong>
 
-                    </article>
-                </section>
+                        </article>
+                    </a>
 
-                <!-- Produto 3 -->
-                <section class="produtos col-md-3">
-                    <!-- Imagem -->
-                    <img src="./assets/imagens/" class="img-fluid" alt="peça tal">
+                    <!-- Produto 3 -->
+                    <a href="#" class="produtos-container col-md-3">
+                        <!-- Imagem -->
+                        <img src="./assets/imagens/look-3.jpg" class="img-fluid" alt="peça tal">
 
-                    <!-- Descrição -->
-                    <article class="produtos-itens">
-                        <h2>Peça Tal</h2>
+                        <!-- Descrição -->
+                        <article class="produtos-itens">
+                            <h2>Peça Tal</h2>
 
-                        <!-- Estrelas -->
-                        <div class="protudos-stars">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-         <path
-          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-        </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-         <path
-          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-        </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-         <path
-          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-        </svg>
-                        </div>
+                            <!-- Estrelas -->
+                            <div class="protudos-stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+          <path
+           d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+         </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+          <path
+           d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+         </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+          <path
+           d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+         </svg>
+                            </div>
 
-                        <!-- Preço -->
-                        <strong class="produtos-preco">
-        R$ 59,90
-       </strong>
+                            <!-- Preço -->
+                            <strong class="produtos-preco">
+         R$ 59,90
+        </strong>
 
-                    </article>
-                </section>
+                        </article>
+                    </a>
 
-                <!-- Produto 4-->
-                <section class="produtos col-md-3">
-                    <!-- Imagem -->
-                    <img src="./assets/imagens/" class="img-fluid" alt="peça tal">
+                    <!-- Produto 4-->
+                    <a href="#" class="produtos-container col-md-3">
+                        <!-- Imagem -->
+                        <img src="./assets/imagens/look-4.jpg" class="img-fluid" alt="peça tal">
 
-                    <!-- Descrição -->
-                    <article class="produtos-itens">
-                        <h2>Peça Tal</h2>
+                        <!-- Descrição -->
+                        <article class="produtos-itens">
+                            <h2>Peça Tal</h2>
 
-                        <!-- Estrelas -->
-                        <div class="protudos-stars">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-         <path
-          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-        </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-         <path
-          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-        </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-         <path
-          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-        </svg>
-                        </div>
+                            <!-- Estrelas -->
+                            <div class="protudos-stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+          <path
+           d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+         </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+          <path
+           d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+         </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+          <path
+           d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+         </svg>
+                            </div>
 
-                        <!-- Preço -->
-                        <strong class="produtos-preco">
-        R$ 59,90
-       </strong>
+                            <!-- Preço -->
+                            <strong class="produtos-preco">
+         R$ 59,90
+        </strong>
 
-                    </article>
-                </section>
+                        </article>
+                    </a>
+                </article>
 
-            </article>
-
-            <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-warning col-md-2">VEJA MAIS</button>
-            </div>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary col-md-2">VEJA MAIS</button>
+                </div>
         </section>
     </main>
 
@@ -393,6 +385,14 @@
             </section>
         </section>
     </footer>
+    <footer class="container-fluid headerfinal">
+        <p>Copyright © 2021 www.ipandorastore.com.br, TODOS OS DIREITOS RESERVADOS. Todo o conteúdo do site, todas as fotos, imagens, logotipos, marcas, dizeres, som, software, conjunto imagem, layout, trade dress, aqui veiculados são de propriedade exclusiva
+            da AbTech ou de seus parceiros. É vedada qualquer reprodução, total ou parcial, de qualquer elemento de identidade, sem expressa autorização. A violação de qualquer direito mencionado implicará na responsabilização cível e criminal nos termos
+            da Lei. </p>
+    </footer>
+
+    <!-- Arquivo index.js -->
+    <script type="javascript" src="./assets/js/index.js"></script>
 
     <!-- Arquivos JQuery e Bootstrap -->
     <script type="javascript" src="./assets/js/jquery.js"></script>
