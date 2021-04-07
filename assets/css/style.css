@@ -110,6 +110,16 @@ nav section ul.nav li:hover ul.nav {
     display: block;
 }
 
+nav section ul.nav li:hover ul.nav li.nav-item a {
+    color: #00bac6;
+}
+
+nav section ul.nav li:hover ul.nav li.nav-item a:hover {
+    color: #00bac6;
+    text-decoration: none;
+    border: none;
+}
+
 nav section ul.nav li ul.nav {
     z-index: 999;
     display: none;
@@ -130,15 +140,17 @@ nav section ul.nav li ul.nav li {
 
 /*Banner Promocional*/
 
+.banner-promocional {
+    background-color: #efefef;
+}
+
 .banner-statico {
     margin-top: 20px;
 }
 
 .banner-statico .vezes-12 {
-    background-size: cover;
-    background-color: #ff0f9a;
     padding: 20px 60px;
-    color: #fff;
+    color: #000;
 }
 
 .banner-statico .vezes-12 svg {
@@ -159,10 +171,8 @@ nav section ul.nav li ul.nav li {
 }
 
 .banner-statico .todo-brasil {
-    background-size: cover;
-    background-color: #b343c3;
     padding: 20px 60px;
-    color: #fff;
+    color: #000;
 }
 
 .banner-statico .todo-brasil svg {
@@ -185,8 +195,28 @@ nav section ul.nav li ul.nav li {
 
 /*Produtos*/
 
+ol.breadcrumb {
+    background: initial;
+    margin: 25px 0;
+    padding: 0;
+}
+
+ol.breadcrumb li.breadcrumb-item a {
+    color: #00bac6;
+}
+
+ol.breadcrumb li.breadcrumb-item a:hover {
+    color: #00bac6;
+    text-decoration: none;
+    border: none;
+}
+
 .produtos {
     margin-top: 30px;
+}
+
+.produtos p {
+    text-align: justify;
 }
 
 .produtos-container {
@@ -221,6 +251,10 @@ nav section ul.nav li ul.nav li {
     font-size: 16px;
 }
 
+.btn-veja-mais a:hover {
+    color: #fff;
+}
+
 
 /*Rodapé*/
 
@@ -238,9 +272,18 @@ footer ul li a {
     color: #000;
 }
 
+footer ul.pagar li a img {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
 footer ul li a:hover {
     text-decoration: none;
     color: #000;
+}
+
+footer p {
+    text-align: justify;
 }
 
 .headerfinal {
@@ -252,4 +295,5 @@ footer ul li a:hover {
 
 .headerfinal p {
     margin: 20px;
+    text-align: center;
 }

@@ -8,12 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>KingZoo - Home</title>
+    <title>IpandoraStore - Home</title>
 
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.css.map">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 
 </head>
 
@@ -24,7 +25,7 @@
         <section class="container">
             <article class="row d-flex justify-content-around align-items-center">
                 <!-- Logo -->
-                <a href="/" class="col-md-2"><img class="logo" src="assets/imagens/Logo.jpg" alt="Logo da empresa - KingZoo"></a>
+                <a href="index.html" class="col-md-2 d-flex justify-content-center"><img class="logo img-fluid" src="assets/imagens/Logo.jpg" alt="Logo da empresa - KingZoo"></a>
 
                 <!-- Buscar -->
                 <form action="#" class="col-md-7 d-flex align-items-center">
@@ -40,7 +41,7 @@
 
                 <!-- Administrativo do Cliente-->
                 <ul class="col-md-3 nav d-flex align-content-center justify-content-around">
-                    <li class="nav-item">
+                    <li class="nav-item login">
                         <!-- Usuário -->
                         <a href="#">
                             <img src="./assets/imagens/usuario.png">Login
@@ -64,7 +65,7 @@
         <section class="container">
             <!-- Menu -->
             <ul class="nav">
-                <li class="col-md-2 nav-item d-flex align-items-center">
+                <li class="col-xl-2 col-lg-3 col-md-12 nav-item d-flex align-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
        <path fill-rule="evenodd"
         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
@@ -89,7 +90,7 @@
                     </ul>
                 </li>
 
-                <li class="col-md-2 nav-item d-flex align-items-center">
+                <li class="col-xl-2 col-lg-3 col-md-12 nav-item d-flex align-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
        <path fill-rule="evenodd"
         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
@@ -116,33 +117,35 @@
         </div>
 
         <!-- Banner Promocional-->
-        <section class="container banner-statico">
-            <section class="row">
-                <article class="col-md-6">
-                    <div class="vezes-12 d-flex align-items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
-        <path
-         d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
-        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
-       </svg>
-                        <p>
-                            Parcele em até<br>
-                            <strong>5x sem juros</strong>
-                        </p>
-                    </div>
-                </article>
-                <article class="col-md-6">
-                    <div class="todo-brasil d-flex align-items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-        <path
-         d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-       </svg>
-                        <p>
-                            Entrega para<br>
-                            <strong>todo Brasil</strong>
-                        </p>
-                    </div>
-                </article>
+        <section class="container-fluid banner-promocional">
+            <section class="container banner-statico">
+                <section class="row">
+                    <article class="col-md-6">
+                        <div class="vezes-12 d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+         <path
+          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+         <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+        </svg>
+                            <p>
+                                Parcele em até<br>
+                                <strong>5x sem juros</strong>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="col-md-6">
+                        <div class="todo-brasil d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+         <path
+          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </svg>
+                            <p>
+                                Entrega para<br>
+                                <strong>todo Brasil</strong>
+                            </p>
+                        </div>
+                    </article>
+                </section>
             </section>
         </section>
 
@@ -287,8 +290,8 @@
                     </a>
                 </article>
 
-                <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-primary col-md-2">VEJA MAIS</button>
+                <div class="btn-veja-mais d-flex justify-content-center">
+                    <a type="button" class="btn btn-primary col-md-2" href="produtos.html">VEJA MAIS</a>
                 </div>
         </section>
     </main>
@@ -315,6 +318,11 @@
                             Horário de atendimento on-line:<br> Segunda a sexta das 9:00 até 17:30 h
                         </li>
                     </ul>
+                    <br>
+                    <h4>Quem somos?</h4>
+                    <p>A Ipandora Store nasceu com a proposta de exteriorizar o que temos de mais lindo dentro de nós. Nossa missão é levar as peças com facilidade até cada um dos clientes, para que se sintam especiais, e principalmente para que seja resgatado
+                        a autoestima, a valorização e o amor próprio, ao ter exaltado com nossas peças o que já é lindo naturalmente.
+                    </p>
                 </article>
 
                 <!--Acesso rápido-->
@@ -336,6 +344,14 @@
                             <a href="#">Troca e devoluções</a>
                         </li>
                     </ul>
+                    <br>
+                    <h4>Redes Sociais</h4>
+                    <ul class="flex-column">
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/ipandora_store/"><img src="./assets/imagens/instagram.png"></a>
+                            <a href="https://www.tiktok.com/@ipandorastore?_d=secCgYIASAHKAESMgow%2F9X36cU4zXjab7Q6uo1Q44tbcuXbCbGAx0aL0Mdwx82hcDeM9ryXh9iMliEzsyQBGgA%3D&language=pt&sec_uid=MS4wLjABAAAA4mP7ZFbe9IVEefxlngE19JquVrh6OYH1Nlwz5XJx4Gj5b-Ds9Tz9RxY4H_VdhjJs&sec_user_id=MS4wLjABAAAA4mP7ZFbe9IVEefxlngE19JquVrh6OYH1Nlwz5XJx4Gj5b-Ds9Tz9RxY4H_VdhjJs&share_app_name=musically&share_author_id=6942554961143415813&share_link_id=b657a357-5c89-4e2e-b548-aa518e47310c&timestamp=1617159095&u_code=dhi95fdb9g07l1&user_id=6942554961143415813&utm_campaign=client_share&utm_medium=android&utm_source=copy&source=h5_m"><img src="./assets/imagens/tiktok.png"></a>
+                        </li>
+                    </ul>
                 </article>
 
                 <!-- Institucional -->
@@ -350,7 +366,21 @@
                         <li class="nav-item">
                             <a href="#">Política e privacidade</a>
                         </li>
-                    </ul>
+                        <br>
+                        <br>
+                        <br>
+                        <!-- Formas de pagamento -->
+                        <h4>Formas de Pagaento</h4>
+
+                        <!-- Tipos de Pagamento -->
+                        <ul class="pagar nav flex-column">
+                            <li class=" nav-item">
+                                <a href="#"><img src="./assets/imagens/cartão.png">Cartão de crédito</a>
+                            </li>
+                            <li class=" nav-item">
+                                <a href="#"><img src="./assets/imagens/picpay.png">Pic Pay</a>
+                            </li>
+                        </ul>
                 </article>
 
                 <!-- Mais acessados -->
@@ -370,6 +400,15 @@
                         </li>
                         <li class="nav-item">
                             <a href="#">Peça tal</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <!-- Categorias -->
+                    <h4>Categorias</h4>
+                    <ul class="nav flex-column">
+                        <!-- Links das categorias-->
+                        <li class="nav-item">
+                            <a href="#">Blusa</a>
                         </li>
                     </ul>
                 </article>

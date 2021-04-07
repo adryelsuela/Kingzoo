@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IpandoraStore - Produtos</title>
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css.map">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- Barra inicial -->
+    <header class="container-fluid">
+        <section class="container">
+            <article class="row d-flex justify-content-around align-items-center">
+                <!-- Logo -->
+                <a href="index.html" class="col-md-2 d-flex justify-content-center"><img class="logo img-fluid" src="assets/imagens/Logo.jpg" alt="Logo da empresa - KingZoo"></a>
+
+                <!-- Buscar -->
+                <form action="#" class="col-md-7 d-flex align-items-center">
+                    <input type="text" name="name" placeholder="O que deseja hoje?">
+                    <button class="d-flex align-itens-center">
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+        viewBox="0 0 16 16">
+        <path
+         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+       </svg>
+      </button>
+                </form>
+
+                <!-- Administrativo do Cliente-->
+                <ul class="col-md-3 nav d-flex align-content-center justify-content-around">
+                    <li class="nav-item login">
+                        <!-- Usuário -->
+                        <a href="#">
+                            <img src="./assets/imagens/usuario.png">Login
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <span class="notificacao d-flex align-content-center justify-content-center">3</span>
+                        <!-- Carrinho -->
+                        <a href="#">
+                            <img src="./assets/imagens/carrinho.png"> Carrinho
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </header>
+
+    <!-- Lista de opções-->
+    <nav class="container-fluid nav-produtos">
+        <section class="container">
+            <!-- Menu -->
+            <ul class="nav">
+                <li class="col-xl-2 col-lg-3 col-md-12 nav-item d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+       <path fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+      </svg> Moda feminina
+                    <!-- SubMenu -->
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="#">Lançamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Plus Size</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Moda Praia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Acessórios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Promoção</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="col-xl-2 col-lg-3 col-md-12 nav-item d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+       <path fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+      </svg> Flor do verão
+                </li>
+            </ul>
+        </section>
+    </nav>
+
+    <main>
+
+
+        <!-- Lista de Produtos -->
+        <section class="container produtos">
+            <!--Breadcrumb-->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Produtos</li>
+                </ol>
+            </nav>
+            <!-- Título -->
+            <h2 class="text-center">Veja todos os nossos produtos</h2>
+            <p>Todos os meses disponibilizamos uma grande variedade de peças de roupas queridinhas do momento através de Lançamentos exclusivos de moda feminina. Para que se sintam especiais, e principalmente para que seja resgatado a autoestima, a valorização
+                e o amor próprio, ao ter exaltado com nossas peças o que já é lindo naturalmente.
+            </p>
+            <!-- linha de produtos -->
+            <article class="row">
+
+                <!-- Produto 1 -->
+                <a href="#" class="produtos-container col-md-3">
+                    <!-- Imagem -->
+                    <img src="./assets/imagens/look-1.jpg" class="img-fluid" alt="peça tal">
+
+                    <!-- Descrição -->
+                    <article class="produtos-itens">
+                        <h2>Peça Tal</h2>
+
+                        <!-- Estrelas -->
+                        <div class="protudos-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                        </div>
+
+                        <!-- Preço -->
+                        <strong class="produtos-preco">
+        R$ 59,90
+       </strong>
+
+                    </article>
+                </a>
+
+                <!-- Produto 2 -->
+                <a href="#" class="produtos-container col-md-3">
+                    <!-- Imagem -->
+                    <img src="./assets/imagens/look-2.jpg" class="img-fluid" alt="peça tal">
+
+                    <!-- Descrição -->
+                    <article class="produtos-itens">
+                        <h2>Peça Tal</h2>
+
+                        <!-- Estrelas -->
+                        <div class="protudos-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                        </div>
+
+                        <!-- Preço -->
+                        <strong class="produtos-preco">
+        R$ 59,90
+       </strong>
+
+                    </article>
+                </a>
+
+                <!-- Produto 3 -->
+                <a href="#" class="produtos-container col-md-3">
+                    <!-- Imagem -->
+                    <img src="./assets/imagens/look-3.jpg" class="img-fluid" alt="peça tal">
+
+                    <!-- Descrição -->
+                    <article class="produtos-itens">
+                        <h2>Peça Tal</h2>
+
+                        <!-- Estrelas -->
+                        <div class="protudos-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                        </div>
+
+                        <!-- Preço -->
+                        <strong class="produtos-preco">
+        R$ 59,90
+       </strong>
+
+                    </article>
+                </a>
+
+                <!-- Produto 4-->
+                <a href="#" class="produtos-container col-md-3">
+                    <!-- Imagem -->
+                    <img src="./assets/imagens/look-4.jpg" class="img-fluid" alt="peça tal">
+
+                    <!-- Descrição -->
+                    <article class="produtos-itens">
+                        <h2>Peça Tal</h2>
+
+                        <!-- Estrelas -->
+                        <div class="protudos-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                        </div>
+
+                        <!-- Preço -->
+                        <strong class="produtos-preco">
+        R$ 59,90
+       </strong>
+                    </article>
+                </a>
+
+
+                <!-- Produto 1 -->
+                <a href="#" class="produtos-container col-md-3">
+                    <!-- Imagem -->
+                    <img src="./assets/imagens/look-1.jpg" class="img-fluid" alt="peça tal">
+
+                    <!-- Descrição -->
+                    <article class="produtos-itens">
+                        <h2>Peça Tal</h2>
+
+                        <!-- Estrelas -->
+                        <div class="protudos-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                        </div>
+
+                        <!-- Preço -->
+                        <strong class="produtos-preco">
+        R$ 59,90
+       </strong>
+
+                    </article>
+                </a>
+
+                <!-- Produto 2 -->
+                <a href="#" class="produtos-container col-md-3">
+                    <!-- Imagem -->
+                    <img src="./assets/imagens/look-2.jpg" class="img-fluid" alt="peça tal">
+
+                    <!-- Descrição -->
+                    <article class="produtos-itens">
+                        <h2>Peça Tal</h2>
+
+                        <!-- Estrelas -->
+                        <div class="protudos-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                        </div>
+
+                        <!-- Preço -->
+                        <strong class="produtos-preco">
+        R$ 59,90
+       </strong>
+
+                    </article>
+                </a>
+
+                <!-- Produto 3 -->
+                <a href="#" class="produtos-container col-md-3">
+                    <!-- Imagem -->
+                    <img src="./assets/imagens/look-3.jpg" class="img-fluid" alt="peça tal">
+
+                    <!-- Descrição -->
+                    <article class="produtos-itens">
+                        <h2>Peça Tal</h2>
+
+                        <!-- Estrelas -->
+                        <div class="protudos-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                        </div>
+
+                        <!-- Preço -->
+                        <strong class="produtos-preco">
+        R$ 59,90
+       </strong>
+
+                    </article>
+                </a>
+
+                <!-- Produto 4-->
+                <a href="#" class="produtos-container col-md-3">
+                    <!-- Imagem -->
+                    <img src="./assets/imagens/look-4.jpg" class="img-fluid" alt="peça tal">
+
+                    <!-- Descrição -->
+                    <article class="produtos-itens">
+                        <h2>Peça Tal</h2>
+
+                        <!-- Estrelas -->
+                        <div class="protudos-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                        </div>
+
+                        <!-- Preço -->
+                        <strong class="produtos-preco">
+        R$ 59,90
+       </strong>
+                    </article>
+                </a>
+
+
+                <!-- Produto 1 -->
+                <a href="#" class="produtos-container col-md-3">
+                    <!-- Imagem -->
+                    <img src="./assets/imagens/look-1.jpg" class="img-fluid" alt="peça tal">
+
+                    <!-- Descrição -->
+                    <article class="produtos-itens">
+                        <h2>Peça Tal</h2>
+
+                        <!-- Estrelas -->
+                        <div class="protudos-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                        </div>
+
+                        <!-- Preço -->
+                        <strong class="produtos-preco">
+        R$ 59,90
+       </strong>
+
+                    </article>
+                </a>
+
+                <!-- Produto 2 -->
+                <a href="#" class="produtos-container col-md-3">
+                    <!-- Imagem -->
+                    <img src="./assets/imagens/look-2.jpg" class="img-fluid" alt="peça tal">
+
+                    <!-- Descrição -->
+                    <article class="produtos-itens">
+                        <h2>Peça Tal</h2>
+
+                        <!-- Estrelas -->
+                        <div class="protudos-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                        </div>
+
+                        <!-- Preço -->
+                        <strong class="produtos-preco">
+        R$ 59,90
+       </strong>
+
+                    </article>
+                </a>
+
+                <!-- Produto 3 -->
+                <a href="#" class="produtos-container col-md-3">
+                    <!-- Imagem -->
+                    <img src="./assets/imagens/look-3.jpg" class="img-fluid" alt="peça tal">
+
+                    <!-- Descrição -->
+                    <article class="produtos-itens">
+                        <h2>Peça Tal</h2>
+
+                        <!-- Estrelas -->
+                        <div class="protudos-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                        </div>
+
+                        <!-- Preço -->
+                        <strong class="produtos-preco">
+        R$ 59,90
+       </strong>
+
+                    </article>
+                </a>
+
+                <!-- Produto 4-->
+                <a href="#" class="produtos-container col-md-3">
+                    <!-- Imagem -->
+                    <img src="./assets/imagens/look-4.jpg" class="img-fluid" alt="peça tal">
+
+                    <!-- Descrição -->
+                    <article class="produtos-itens">
+                        <h2>Peça Tal</h2>
+
+                        <!-- Estrelas -->
+                        <div class="protudos-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                        </div>
+
+                        <!-- Preço -->
+                        <strong class="produtos-preco">
+        R$ 59,90
+       </strong>
+                    </article>
+                </a>
+
+                <!-- Produto 1 -->
+                <a href="#" class="produtos-container col-md-3">
+                    <!-- Imagem -->
+                    <img src="./assets/imagens/look-1.jpg" class="img-fluid" alt="peça tal">
+
+                    <!-- Descrição -->
+                    <article class="produtos-itens">
+                        <h2>Peça Tal</h2>
+
+                        <!-- Estrelas -->
+                        <div class="protudos-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                        </div>
+
+                        <!-- Preço -->
+                        <strong class="produtos-preco">
+        R$ 59,90
+       </strong>
+
+                    </article>
+                </a>
+
+                <!-- Produto 2 -->
+                <a href="#" class="produtos-container col-md-3">
+                    <!-- Imagem -->
+                    <img src="./assets/imagens/look-2.jpg" class="img-fluid" alt="peça tal">
+
+                    <!-- Descrição -->
+                    <article class="produtos-itens">
+                        <h2>Peça Tal</h2>
+
+                        <!-- Estrelas -->
+                        <div class="protudos-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                        </div>
+
+                        <!-- Preço -->
+                        <strong class="produtos-preco">
+        R$ 59,90
+       </strong>
+
+                    </article>
+                </a>
+
+                <!-- Produto 3 -->
+                <a href="#" class="produtos-container col-md-3">
+                    <!-- Imagem -->
+                    <img src="./assets/imagens/look-3.jpg" class="img-fluid" alt="peça tal">
+
+                    <!-- Descrição -->
+                    <article class="produtos-itens">
+                        <h2>Peça Tal</h2>
+
+                        <!-- Estrelas -->
+                        <div class="protudos-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                        </div>
+
+                        <!-- Preço -->
+                        <strong class="produtos-preco">
+        R$ 59,90
+       </strong>
+
+                    </article>
+                </a>
+
+                <!-- Produto 4-->
+                <a href="#" class="produtos-container col-md-3">
+                    <!-- Imagem -->
+                    <img src="./assets/imagens/look-4.jpg" class="img-fluid" alt="peça tal">
+
+                    <!-- Descrição -->
+                    <article class="produtos-itens">
+                        <h2>Peça Tal</h2>
+
+                        <!-- Estrelas -->
+                        <div class="protudos-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+         <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+                        </div>
+
+                        <!-- Preço -->
+                        <strong class="produtos-preco">
+        R$ 59,90
+       </strong>
+                    </article>
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="container-fluid">
+        <section class="container">
+
+            <!-- Menus -->
+            <section class="row">
+
+                <!-- Atendimento -->
+                <article class="col-md-4">
+                    <h4>Atendimento</h4>
+
+                    <!-- Links -->
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="tel:+5599999999999">(xx) xxxxx-xxxx</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="mailto:contato@sualoja.com.br">Email</a>
+                        </li>
+                        <li class="nav-item">
+                            Horário de atendimento on-line:<br> Segunda a sexta das 9:00 até 17:30 h
+                        </li>
+                    </ul>
+                    <br>
+                    <h4>Quem somos?</h4>
+                    <p>A Ipandora Store nasceu com a proposta de exteriorizar o que temos de mais lindo dentro de nós. Nossa missão é levar as peças com facilidade até cada um dos clientes, para que se sintam especiais, e principalmente para que seja resgatado
+                        a autoestima, a valorização e o amor próprio, ao ter exaltado com nossas peças o que já é lindo naturalmente.
+                    </p>
+                </article>
+
+                <!--Acesso rápido-->
+                <article class="col-md-3">
+                    <h4>Acesso rápido</h4>
+
+                    <!-- Links -->
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="#">Minha conta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Meus pedidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Rastrear meus pedidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Troca e devoluções</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <h4>Redes Sociais</h4>
+                    <ul class="flex-column">
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/ipandora_store/"><img src="./assets/imagens/instagram.png"></a>
+                            <a href="https://www.tiktok.com/@ipandorastore?_d=secCgYIASAHKAESMgow%2F9X36cU4zXjab7Q6uo1Q44tbcuXbCbGAx0aL0Mdwx82hcDeM9ryXh9iMliEzsyQBGgA%3D&language=pt&sec_uid=MS4wLjABAAAA4mP7ZFbe9IVEefxlngE19JquVrh6OYH1Nlwz5XJx4Gj5b-Ds9Tz9RxY4H_VdhjJs&sec_user_id=MS4wLjABAAAA4mP7ZFbe9IVEefxlngE19JquVrh6OYH1Nlwz5XJx4Gj5b-Ds9Tz9RxY4H_VdhjJs&share_app_name=musically&share_author_id=6942554961143415813&share_link_id=b657a357-5c89-4e2e-b548-aa518e47310c&timestamp=1617159095&u_code=dhi95fdb9g07l1&user_id=6942554961143415813&utm_campaign=client_share&utm_medium=android&utm_source=copy&source=h5_m"><img src="./assets/imagens/tiktok.png"></a>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Institucional -->
+                <article class="col-md-3">
+                    <h4>Institucional</h4>
+
+                    <!-- Links -->
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="#">Sobre a loja</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Política e privacidade</a>
+                        </li>
+                        <br>
+                        <br>
+                        <br>
+                        <!-- Formas de pagamento -->
+                        <h4>Formas de Pagaento</h4>
+
+                        <!-- Tipos de Pagamento -->
+                        <ul class="pagar nav flex-column">
+                            <li class=" nav-item">
+                                <a href="#"><img src="./assets/imagens/cartão.png">Cartão de crédito</a>
+                            </li>
+                            <li class=" nav-item">
+                                <a href="#"><img src="./assets/imagens/picpay.png">Pic Pay</a>
+                            </li>
+                        </ul>
+                </article>
+
+                <!-- Mais acessados -->
+                <article class="col-md-2">
+                    <h4>Mais acessados</h4>
+
+                    <!-- Links -->
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="#">Peça tal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Peça tal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Peça tal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Peça tal</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <!-- Categorias -->
+                    <h4>Categorias</h4>
+                    <ul class="nav flex-column">
+                        <!-- Links das categorias-->
+                        <li class="nav-item">
+                            <a href="#">Blusa</a>
+                        </li>
+                    </ul>
+                </article>
+
+            </section>
+        </section>
+    </footer>
+    <footer class="container-fluid headerfinal">
+        <p>Copyright © 2021 www.ipandorastore.com.br, TODOS OS DIREITOS RESERVADOS. Todo o conteúdo do site, todas as fotos, imagens, logotipos, marcas, dizeres, som, software, conjunto imagem, layout, trade dress, aqui veiculados são de propriedade exclusiva
+            da AbTech ou de seus parceiros. É vedada qualquer reprodução, total ou parcial, de qualquer elemento de identidade, sem expressa autorização. A violação de qualquer direito mencionado implicará na responsabilização cível e criminal nos termos
+            da Lei. </p>
+    </footer>
+
+    <!-- Arquivo index.js -->
+    <script type="javascript" src="./assets/js/index.js"></script>
+
+    <!-- Arquivos JQuery e Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
