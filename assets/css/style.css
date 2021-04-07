@@ -100,6 +100,16 @@ nav section ul.nav li {
     padding: 10px;
 }
 
+nav section ul.nav li a {
+    color: #000;
+}
+
+nav section ul.nav li a:hover {
+    color: #00bac6;
+    text-decoration: none;
+    border: none;
+}
+
 nav section ul.nav li svg {
     margin-right: 10px;
     width: 20px;
@@ -111,7 +121,7 @@ nav section ul.nav li:hover ul.nav {
 }
 
 nav section ul.nav li:hover ul.nav li.nav-item a {
-    color: #00bac6;
+    color: #000;
 }
 
 nav section ul.nav li:hover ul.nav li.nav-item a:hover {
@@ -253,6 +263,14 @@ ol.breadcrumb li.breadcrumb-item a:hover {
 
 .btn-veja-mais a:hover {
     color: #fff;
+}
+
+.produtos-conteudo .produtos-preco .produtos-stars svg {
+    color: rgb(255, 255, 50);
+}
+
+div.form-group label {
+    margin-top: 8px;
 }
 
 
