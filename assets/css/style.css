@@ -134,7 +134,7 @@ nav section ul.nav li ul.nav {
     z-index: 999;
     display: none;
     position: absolute;
-    top: 44px;
+    top: 45px;
     background-color: #fff;
     border-top: 3px solid #00bac6;
     width: 100%;
@@ -273,6 +273,15 @@ div.form-group label {
     margin-top: 8px;
 }
 
+.politica-e-privacidade-conteudo h2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.politica-e-privacidade-conteudo p {
+    margin: 30px 0;
+}
+
 
 /*Rodapé*/
 
@@ -290,7 +299,7 @@ footer ul li a {
     color: #000;
 }
 
-footer ul.pagar li a img {
+footer ul.pagar li img {
     margin-right: 20px;
     margin-bottom: 10px;
 }
