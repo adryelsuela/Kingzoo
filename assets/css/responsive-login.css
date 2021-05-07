@@ -1,0 +1,50 @@
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (min-width: 320px) {
+    .ja_sou_cliente button {
+        position: relative;
+        top: 10px;
+        left: 0px;
+    }
+}
+
+@media only screen and (max-width: 2560px) {
+    /*Página Login*/
+    .ja_sou_cliente {
+        position: absolute;
+        top: 0px;
+        left: 25%;
+    }
+    .ja_sou_cliente input {
+        margin-bottom: 5px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        height: 32px;
+        width: 250px;
+    }
+    .ja_sou_cliente button {
+        position: relative;
+        width: 250px;
+        top: 5px;
+        left: 0px;
+    }
+    .criar_conta {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+    }
+    .criar_conta input {
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        height: 32px;
+        width: 250px;
+    }
+    .criar_conta button {
+        width: 250px
+    }
+    .footer-login {
+        position: absolute;
+        top: 630px;
+    }
+}

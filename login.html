@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Ipandora Store</title>
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css.map">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive-login.css">
+
+</head>
+
+<body>
+    <!-- Barra inicial -->
+    <header class="container-fluid">
+        <section class="container">
+            <article class="row d-flex justify-content-around align-items-center">
+                <!-- Logo -->
+                <a href="./index.html" class="col-md-2 d-flex justify-content-center"><img class="logo img-fluid" src="assets/imagens/Logo.jpg" alt="Logo da empresa - KingZoo"></a>
+
+                <!-- Buscar -->
+                <form action="#" class="col-md-7 d-flex align-items-center">
+                    <input type="text" name="name" placeholder="O que deseja hoje?">
+                    <button class="d-flex align-itens-center">
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+        viewBox="0 0 16 16">
+        <path
+         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+       </svg>
+      </button>
+                </form>
+
+                <!-- Administrativo do Cliente-->
+                <ul class="col-md-3 nav d-flex align-content-center justify-content-around icones">
+                    <li class="nav-item login">
+                        <!-- Usuário -->
+                        <a href="./login.html">
+                            <img src="./assets/imagens/usuario.png">Login
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <span class="notificacao d-flex align-content-center justify-content-center">3</span>
+                        <!-- Carrinho -->
+                        <a href="#">
+                            <img src="./assets/imagens/carrinho.png">Carrinho
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </header>
+
+    <nav class="container-fluid nav-produtos">
+        <section class="container">
+
+        </section>
+    </nav>
+
+    <main>
+        <!-- Lista de Produtos -->
+        <section class="container produtos">
+            <article class="row">
+                <article class="produtos-itens col-md-5 ">
+                    <div class="ja_sou_cliente">
+                        <h3>Já sou cliente</h3>
+                        <input type="text" placeholder="E-mail" class="d-flex">
+                        <label for="inputSenha">Senha</label>
+                        <input id="inputSenha" type="password" class="d-flex senha">
+                        <a href="#"><label>Esqueci minha senha</label></a>
+                        <button type="button" class="btn btn-info" href="./produtos.html">ACESSAR CONTA</button>
+                    </div>
+                </article>
+
+                <article class="produtos-item col-md-5">
+                    <div class="criar_conta">
+                        <h3>Criar conta</h3>
+                        <input type="text" placeholder="E-mail" class="d-flex ">
+                        <button type="button" class="btn btn-info" href="./produtos.html">CONTINUAR</button>
+                    </div>
+                </article>
+            </article>
+        </section>
+    </main>
+
+    <footer class="container-fluid headerfinal footer-login">
+        <p>Copyright © 2021 www.ipandorastore.com.br, TODOS OS DIREITOS RESERVADOS. Todo o conteúdo do site, todas as fotos, imagens, logotipos, marcas, dizeres, som, software, conjunto imagem, layout, trade dress, aqui veiculados são de propriedade exclusiva
+            da AbTech ou de seus parceiros. É vedada qualquer reprodução, total ou parcial, de qualquer elemento de identidade, sem expressa autorização. A violação de qualquer direito mencionado implicará na responsabilização cível e criminal nos termos
+            da Lei. </p>
+    </footer>
+
+    <!-- Arquivo index.js -->
+    <script type="javascript" src="./assets/js/index.js"></script>
+
+    <!-- Arquivos JQuery e Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
